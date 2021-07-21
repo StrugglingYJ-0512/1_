@@ -22,9 +22,18 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/', (req, res, next) => {
-  res.send('Welcome Home');
-});
+// ejs 셋팅. 
+app.set('views', __dirname + '/views'); // ejs 사용하는 directory 알려줌.
+app.set('view engine', 'ejs'); // ejs를 view engine으로써 사용하겠다. 
+
+// /test 라우트로 들어오는 경우에..
+app.get('/test', (req, res) => {
+  let name = req.query.name;
+  res.render('test', { name }); // 어떤것을 넘겨줄지, 파일명 ('test')을 넘겨준다. 
+  // 'test' 파일의 내용이 화면에 그려진다. 
+  // name을 담은 객체를 넘겨줌 (render)
+})
+
 
 
 app.listen(port, () => {
