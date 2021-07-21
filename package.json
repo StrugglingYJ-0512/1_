@@ -1,0 +1,22 @@
+{
+  "name": "1_",
+  "version": "1.0.0",
+  "description": "node.js_basic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StrugglingYJ-0512/1_.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StrugglingYJ-0512/1_/issues"
+  },
+  "homepage": "https://github.com/StrugglingYJ-0512/1_#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
