@@ -34,6 +34,14 @@ app.get('/test', (req, res) => {
   // name을 담은 객체를 넘겨줌 (render)
 })
 
+// ejs 사용으로 홈페이지 생성
+app.get('/home', (req, res) => {
+  res.render('index'); // /home으로 들어오는 경로는 index.ejs로 rendering함.
+})
+
+app.get('/detail', (req, res) => {
+  res.render('detail'); // /home으로 들어오는 경로는 index.ejs로 rendering함.
+})
 
 
 app.listen(port, () => {
